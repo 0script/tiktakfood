@@ -1,7 +1,11 @@
 from rest_framework import serializers
 
-from .models import Product,
-
+from .models import (
+    ProductCategory,
+    FoodCategory,
+    Product,
+    ProductFood
+)
 
 class ProductSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:

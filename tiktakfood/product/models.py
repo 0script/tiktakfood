@@ -42,6 +42,7 @@ class ProductBase(models.Model):
     thumbnail=models.ImageField(upload_to='upload/',blank=True,null=True)
     available=models.BooleanField(default=True)
     date_added=models.DateTimeField(auto_now_add=True)
+    ratting=models.IntegerField(default=0)
 
     
     class Meta:
