@@ -1,6 +1,19 @@
 # to do list for tiktok food web application 
 
-1. Create user model will needed role : Administrator ,Customer and delivery agent + root user for webmaster .
+
+
+<!-- 
+<span style="color:#f50202"> **TO DO [X]**</span>  :sleeping:
+
+<span style="color:#f29007"> **IN PROGRESS [X]**</span>. :rocket:
+
+<span style="color:#96a832"> **TO VERIFY [X]**</span>. :question:
+
+<span style="color:#47f502"> **DONE []**</span>. :heavy_check_mark: -->
+
+
+1. Create user model will needed role : Administrator ,Customer and delivery agent + root user for webmaster .<span style="color:#f50202"> **TO DO**</span>  :sleeping:
+
 
 2. Create base view : Base navbar, and logint/logout buttion .
 
