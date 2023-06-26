@@ -44,7 +44,10 @@ INSTALLED_APPS = [
     'business',
     'product',
     'order',
+    'accounts',
 ]
+
+AUTH_USER_MODEL = "accounts.CustomUser"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -86,10 +89,21 @@ WSGI_APPLICATION = 'tiktakfood.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'tiktakfooddb',
+        'USER': 'tiktakadmin',
+        'PASSWORD': 'R@ndom@1234.',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 

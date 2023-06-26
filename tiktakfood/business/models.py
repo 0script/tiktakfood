@@ -1,6 +1,7 @@
 from django.db import models
 from django.core.files import File
-from django.contrib.auth.models import User
+# from django.contrib.auth.models import User
+from accounts.models import CustomUser
 from django.utils import timezone
 
 from io import BytesIO
@@ -24,7 +25,8 @@ class BusinessCategory(models.Model):
         return f'/{self.slug}/'
 
 class Business(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='business')
+    #user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='business')
+    user = models.OneToOneField(CustomUser, on_delete=models.CASCADE, related_name='business')
     category=models.ForeignKey(BusinessCategory,related_name='business',on_delete=models.CASCADE)
     name=models.CharField(max_length=255)
     slug=models.SlugField()
