@@ -12,7 +12,9 @@
 <span style="color:#47f502"> **DONE []**</span>. :heavy_check_mark: -->
 
 
-1. Create user model will needed role : Administrator ,Customer and delivery agent + root user for webmaster .<span style="color:#f50202"> **TO DO**</span>  :sleeping:
+1. Create user model will needed role : Administrator ,Customer and delivery agent + root user for webmaster .<span style="color:#f29007"> **IN PROGRESS**</span>:rocket:
+
+* Use django group to separate user
 
 
 2. Create base view : Base navbar, and logint/logout buttion .<span style="color:#f50202"> **TO DO**</span>  :sleeping:
