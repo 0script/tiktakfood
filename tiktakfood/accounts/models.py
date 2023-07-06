@@ -4,9 +4,8 @@ from django.db import models
 # Create your models here.
 
 class CustomUser(AbstractUser):
-    # username = None
-    email = models.EmailField( unique=True)
     phone = models.EmailField( unique=True)
+    address=models.CharField(max_length=255)
     # will use django group 
     # is_delivery=models.BooleanField(_("is a delivery agent"),default=False)
     # is_admin=models.BooleanField(_("is administrator for restaurant"),default=False)
@@ -16,3 +15,4 @@ class CustomUser(AbstractUser):
 
     def __str__(self):
         return self.username
+    
