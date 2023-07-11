@@ -21,11 +21,11 @@
 
 3. Make register/login functionalities :<span style="color:#f50202"> **TO DO**</span>  :sleeping:
     * Include login/register with google,facebook .
-        * Register view / form  
-        * Register functionalities
+        * Register view / form  **DONE**:heavy_check_mark:
+        * Register functionalities 
         * Login view / form
         * Login functionalitie
-        * Reset passwor view / form 
+        * Reset password view / form 
         * Reset password functionality
 
 4. Create customer profile view : Customer can update his information , logout and remove his account .<span style="color:#f50202"> **TO DO**</span>  :sleeping:
