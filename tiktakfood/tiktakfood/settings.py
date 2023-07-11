@@ -101,7 +101,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'tiktakfooddb',
         'USER': 'tiktakadmin',
-        'PASSWORD': 'R@ndom@1234.',
+        'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '',
     }
