@@ -8,8 +8,8 @@ import datetime
 class CustomUser(AbstractUser):
     phone = models.EmailField( unique=True)
     address=models.CharField(max_length=255)
-    sex=models.CharField(max_length=1,default='M')
-    age=models.DateField(blank=True)
+    sexe=models.CharField(max_length=1,default='M')
+    birthday=models.DateField(blank=True,default=datetime.date.today)
     # will use django group 
     # is_delivery=models.BooleanField(_("is a delivery agent"),default=False)
     # is_admin=models.BooleanField(_("is administrator for restaurant"),default=False)
