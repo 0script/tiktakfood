@@ -17,8 +17,9 @@ class RegistrationSerializer(serializers.ModelSerializer):
             'email',
             'phone',
             'address',
-            'password'
+            'sexe',
+            'birthday',
+            'password',
         )
-    def create(self, validated_data):
-        user=CustomUser.objects.create_user(validated_data)
-        return user
+def create(self, validated_data):
+    return Comment.objects.create(**validated_data)
